@@ -5,6 +5,13 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Hello World!</h1>
+    <h1 class="display-4">@Model.Message</h1>
+    <p>現在時刻 @Model.Now</p>
+    <p>@Model.Greet @Model.DisplayName さん！</p>
+    <form method="post">
+        <input asp-for="InputName" />
+        <span asp-validation-for="InputName" class="text-danger"></span>
+        <button type="submit">送信</button>
+    </form>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="HelloWorld/HelloWorld.csproj" />
+  <Project Path="TestProject1/HelloWorld.Tests.csproj" Id="a411fa68-3b9f-4ca9-9f64-eb0738819755" />
 </Solution>
