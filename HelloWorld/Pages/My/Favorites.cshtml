@@ -1,0 +1,17 @@
+﻿@page
+@model HelloWorld.Pages.FavoritesModel
+@{
+    ViewData["Title"] = "好きなもの";
+}
+
+<div class="text-center">
+    <h1>お気に入り</h1>
+    <ul>
+        <p>全@(Model.Games.Count)件</p>
+        @foreach(var game in Model.Games)
+        {
+            <li>@game.Title@game.ReleaseYear,@game.Price</li>
+        }
+    </ul>
+
+</div>
